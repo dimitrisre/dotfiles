@@ -14,5 +14,5 @@ function install_docker {
    stable"
 
   sudo apt update
-  sudo apt-get install docker-ce -y
+  sudo apt-get install docker -y
 }
