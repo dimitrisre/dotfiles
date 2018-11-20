@@ -1,7 +1,8 @@
 #!/bin/bash
 sudo apt update
-sudo apt upgrade -y
-source ./*.sh
+for file in $(ls setup_*); do
+  source $file
+done
 restore_gnome_settings
 install_general_tools
 # restore_tmux_settings
