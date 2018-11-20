@@ -12,7 +12,9 @@
 #   or
 # wget -qO- https://deb.nodesource.com/setup_11.x | bash -
 #
+
 function install_node {
+  [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
   export DEBIAN_FRONTEND=noninteractive
   SCRSUFFIX="_11.x"
   NODENAME="Node.js 11.x"
