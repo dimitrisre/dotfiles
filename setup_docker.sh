@@ -15,4 +15,5 @@ function install_docker {
 
   sudo apt update
   sudo apt-get install docker-ce -y
+  sudo usermod -aG docker dimitris
 }
