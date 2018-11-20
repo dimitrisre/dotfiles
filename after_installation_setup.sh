@@ -20,3 +20,5 @@ install_docker
 install_docker_compose
 install_google_chrome_from_repo
 install_mozilla
+install_etcher
+install_idea

@@ -5,6 +5,15 @@ function install_general_tools {
   iftop \
   htop \
   git \
+  gitg \
+  build-essential \
+  vim \
+  meld \
+  wget \
+  make \
+  cmake \
+  automake \
+  autoconf \
   tmux \
   tmux-plugin-manager \
   bash-completion \
