@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt update
+sudo apt upgrade -y
 source ./*.sh
 restore_gnome_settings
 install_general_tools
