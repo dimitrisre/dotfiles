@@ -2,6 +2,7 @@
 source ./*.sh
 restore_gnome_settings
 install_general_tools
+restore_tmux_settings
 install_java
 install_scala
 install_sbt
