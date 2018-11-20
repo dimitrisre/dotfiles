@@ -1,0 +1,15 @@
+#!/bin/bash
+source ./*.sh
+restore_gnome_settings
+install_general_tools
+install_java
+install_scala
+install_sbt
+install_python
+install_node
+install_atom
+install_sublime_texteditor
+install_docker_ce
+install_docker_compose
+install_google_chrome_from_repo
+install_mozilla
