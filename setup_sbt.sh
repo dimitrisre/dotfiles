@@ -9,8 +9,10 @@ function install_sbt_from_git {
 }
 
 function install_sbt {
+  echo "_____________Installing sbt______________"
   wget https://piccolo.link/sbt-1.2.6.zip
   unzip sbt-1.2.6.zip
   sudo cp sbt /opt/sbt
   sudo ln -s /opt/sbt/bin/sbt /usr/bin/sbt
+  echo "_________Finished________"
 }

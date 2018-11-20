@@ -1,5 +1,6 @@
 #!/bin/bash
 function install_mozilla {
+  echo "____________Installing firefox latest edition_________"
   pushd $HOME/my_configuration/
   sudo apt remove -y firefox-esr
   sudo mkdir /opt/mozdownload
@@ -13,4 +14,5 @@ function install_mozilla {
   sudo cp $HOME/my_configuration/config_files/icons/mozicon128.png /usr/share/firefox/icons/
   sudo cp $HOME/my_configuration/application_files/firefox.desktop /usr/share/applications/
   popd
+  echo "_________Finished________"
 }

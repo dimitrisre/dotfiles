@@ -1,5 +1,6 @@
 #!/bin/bash
 function install_docker {
+  echo "__________ Installing docker-ce repo __________"
   sudo apt-get install \
     apt-transport-https \
     ca-certificates \
@@ -16,4 +17,5 @@ function install_docker {
   sudo apt update
   sudo apt-get install docker-ce -y
   sudo usermod -aG docker dimitris
+  echo "_________Finished________"
 }

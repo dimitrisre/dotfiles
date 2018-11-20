@@ -1,5 +1,6 @@
 #!/bin/bash
 function install_general_tools {
+  echo "____________Installing basic tools____________"
   sudo apt install -y jq \
   dirmngr \
   iftop \
@@ -27,4 +28,5 @@ function install_general_tools {
   gconf2 \
   gconf2-common \
   libgconf-2-4
+  echo "_________Finished________"
 }
