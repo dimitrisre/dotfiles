@@ -1,6 +1,5 @@
 #!/bin/bash
 function install_general_tools {
-  sudo apt update
   sudo apt install -y jq \
   dirmngr \
   iftop \
