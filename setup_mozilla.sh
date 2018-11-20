@@ -2,8 +2,8 @@
 function install_mozilla {
   pushd $HOME/my_configuration/
   sudo apt remove -y firefox-esr
-  git clone https://github.com/mozilla/mozdownload
-  cd mozdownload/
+  git clone https://github.com/mozilla/mozdownload /opt/
+  cd /opt/mozdownload/
   sudo pip install mozdownload &&
   sudo python setup.py develop
   cd /tmp/ && sudo mozdownload --version=latest
