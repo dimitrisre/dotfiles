@@ -1,0 +1,12 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "21f4e8d7-f07f-4d1a-9351-2dbc6ebefeb4"
+#to ~/.atom/config.cson
