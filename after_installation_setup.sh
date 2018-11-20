@@ -3,6 +3,9 @@ sudo apt update
 for file in $(ls setup_*); do
   source $file
 done
+for file in $(ls load_*); do
+  source $file
+done
 restore_gnome_settings
 install_general_tools
 # restore_tmux_settings
