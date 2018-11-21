@@ -1,7 +1,7 @@
 #!/bin/bash
 function install_mozilla {
   echo "____________Installing firefox latest edition_________"
-  pushd $HOME/my_configuration/
+  pushd $HOME/dotfiles/
   sudo apt remove -y firefox-esr
   sudo mkdir /opt/mozdownload
   git clone https://github.com/mozilla/mozdownload /opt/mozdownload
@@ -11,8 +11,8 @@ function install_mozilla {
   cd /tmp/ && sudo mozdownload --version=latest
   sudo bunzip2 /tmp/firefox-*.bz2
   sudo tar xvf /tmp/firefox-*.tar -C /usr/share/
-  sudo cp $HOME/my_configuration/config_files/icons/mozicon128.png /usr/share/firefox/icons/
-  sudo cp $HOME/my_configuration/application_files/firefox.desktop /usr/share/applications/
+  sudo cp $HOME/dotfiles/config_files/icons/mozicon128.png /usr/share/firefox/icons/
+  sudo cp $HOME/dotfiles/application_files/firefox.desktop /usr/share/applications/
   popd
   echo "_________Finished________"
 }

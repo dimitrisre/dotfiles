@@ -16,6 +16,7 @@ function install_docker {
 
   sudo apt update
   sudo apt-get install docker-ce -y
-  sudo usermod -aG docker dimitris
+  export DOCK_USER=$USER
+  sudo -E usermod -aG docker $DOCK_USER
   echo "_________Finished________"
 }

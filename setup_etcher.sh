@@ -1,6 +1,6 @@
 #!/bin/bash
 function install_etcher {
-  pushd $HOME/my_configuration
+  pushd $HOME/dotfiles
   etcher_version=$(curl --silent "https://api.github.com/repos/balena-io/etcher/releases/latest" | jq -r .tag_name)
   short_version=${etcher_version:1:${#etcher_version}}
   echo "___________ Installing etcher version $etcher_version _____________"

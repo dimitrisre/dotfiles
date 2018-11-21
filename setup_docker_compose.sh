@@ -1,6 +1,6 @@
 #!/bin/bash
 function install_docker_compose {
-  pushd $HOME/my_configuration/
+  pushd $HOME/dotfiles/
   compose_version=$(curl https://api.github.com/repos/docker/compose/releases/latest | jq .name -r)
   echo "__________ Installing docker compose version $compose_version __________"
   output='/usr/local/bin/docker-compose'
