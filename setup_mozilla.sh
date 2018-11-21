@@ -11,8 +11,9 @@ function install_mozilla {
   cd /tmp/ && sudo mozdownload --version=latest
   sudo bunzip2 /tmp/firefox-*.bz2
   sudo tar xvf /tmp/firefox-*.tar -C /usr/share/
-  sudo cp $HOME/dotfiles/config_files/icons/mozicon128.png /usr/share/firefox/icons/
-  sudo cp $HOME/dotfiles/application_files/firefox.desktop /usr/share/applications/
+  sudo mkdir -p /usr/share/firefox/icons/
+  sudo cp $HOME/dotfiles/desktop_files/icons/mozicon128.png /usr/share/firefox/icons/
+  sudo cp $HOME/dotfiles/desktop_files/firefox.desktop /usr/share/applications/
   popd
   echo "_________Finished________"
 }

@@ -8,7 +8,7 @@ function install_atom {
   sudo apm install teletype git-plus ide-bash language-scala
   sudo npm i --unsafe-perm -g bash-language-server
   cp $HOME/dotfiles/config_files/atom_config.cson $HOME/.atom/config.cson
-  sudo cp $HOME/dotfiles/application_files/atom.desktop /usr/share/applications/
+  sudo cp $HOME/dotfiles/desktop_files/atom.desktop /usr/share/applications/
   popd
   echo "_________________________Finished_________________________"
 }

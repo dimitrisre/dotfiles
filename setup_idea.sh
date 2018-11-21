@@ -11,11 +11,12 @@ function install_idea {
   tar zxf $download_file --strip-components=1 -C $installation_dir
   rm $download_file
 
-  my_desktop_file=$HOME/dotfiles/application_files/jetbrains-idea-ce.desktop
+  cp $HOME/dotfiles/desktop_files/jetbrains-idea-ce.desktop /tmp/
+  sed -i -e "s/TO_BE_REPLACED/$installation_dir/g" /tmp/jetbrains-idea-ce.desktop
+  my_desktop_file=/tmp/jetbrains-idea-ce.desktop
   cp $my_desktop_file $HOME/.local/share/applications/
+  rm $my_desktop_file
 
-  echo "Exec=\"$installation_dir/bin/idea.sh\" %f" >> $APPLICATION_FILE
-  echo "Icon=$installation_dir/bin/idea.png" >> $APPLICATION_FILE
   echo "_________Finished________"
   popd
 }
