@@ -1,2 +1,2 @@
-# my_configuration
+# dotfiles
 Basic after installation confiuration
