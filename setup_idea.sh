@@ -5,7 +5,7 @@ function install_idea {
   download_url=$(wget $release_url -q -O - | jq '.IIC[0].downloads.linux.link' -r)
   download_file="/tmp/ideaIC.tar.gz"
   mkdir -p $HOME/programms
-  installation_dir="$HOME\/programms\/idea\/"
+  installation_dir="$HOME/programms/idea/"
 
   wget $download_url -O $download_file
   mkdir -p $installation_dir
