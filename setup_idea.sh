@@ -2,7 +2,7 @@ function install_idea {
   pushd $HOME/dotfiles
   echo "_____________ Install idea latest version ______________"
   release_url="https://data.services.jetbrains.com/products/releases?code=IIC&latest=true"
-  download_url=$(wget $URL_RELEASE -q -O - | jq '.IIC[0].downloads.linux.link' -r)
+  download_url=$(wget $release_url -q -O - | jq '.IIC[0].downloads.linux.link' -r)
   download_file="/tmp/ideaIC.tar.gz"
   installation_dir="$HOME/opt/idea"
 
