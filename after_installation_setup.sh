@@ -22,3 +22,4 @@ install_google_chrome_from_repo
 install_mozilla
 install_etcher
 install_idea
+[[ ! -v DEVELOPER_ENV ]] && install_steam
