@@ -10,7 +10,6 @@ restore_gnome_settings
 install_general_tools
 restore_tmux_settings
 install_java
-install_scala
 install_sbt_from_git
 install_python
 install_node
