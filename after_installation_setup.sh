@@ -8,6 +8,7 @@ for file in $(ls load_*); do
 done
 restore_gnome_settings
 install_general_tools
+restore_gnome_theme
 restore_tmux_settings
 install_java
 install_scala_apt

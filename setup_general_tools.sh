@@ -9,6 +9,7 @@ function install_general_tools {
   gitg \
   build-essential \
   vim \
+  bc \
   meld \
   wget \
   make \
