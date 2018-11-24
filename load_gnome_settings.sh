@@ -8,5 +8,6 @@ function restore_gnome_settings {
   rm /tmp/gnome_settings.conf
   cp $HOME/dotfiles/config_files/bashrc $HOME/.bashrc
   cp $HOME/dotfiles/backgrounds/desktop-grub.png /usr/share/desktop-base/
+  sudo update-grub2
   echo "_________Finished________"
 }
