@@ -7,5 +7,6 @@ function restore_gnome_settings {
   dconf load /org/gnome/ < /tmp/gnome_settings.conf
   rm /tmp/gnome_settings.conf
   cp $HOME/dotfiles/config_files/bashrc $HOME/.bashrc
+  cp $HOME/dotfiles/backgrounds/desktop-grub.png /usr/share/desktop-base/
   echo "_________Finished________"
 }
