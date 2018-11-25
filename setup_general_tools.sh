@@ -28,6 +28,7 @@ function install_general_tools {
   gconf-service \
   gconf2 \
   gconf2-common \
+  libxml2-utils \
   libgconf-2-4
   echo "_________Finished________"
 }
