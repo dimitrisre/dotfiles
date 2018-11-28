@@ -12,7 +12,7 @@ restore_gnome_theme
 restore_tmux_settings
 install_java
 install_maven
-install_scala_apt
+install_scala
 install_sbt_from_git
 install_python
 install_node
