@@ -1,0 +1,6 @@
+[user]
+	email = dimitris.re@gmail.com
+	name = Dimitris
+
+[credential "https://github.com"]
+	username = dimitris.re@gmail.com
