@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DBeaver
+Comment=Universal database manager
+Categories=Development;IDE;
+Terminal=false
+Exec=TO_BE_REPLACED/dbeaver %f
+Icon=TO_BE_REPLACED/dbeaver.png
