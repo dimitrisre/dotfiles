@@ -10,6 +10,7 @@ restore_gnome_settings
 install_general_tools
 restore_gnome_theme
 restore_tmux_settings
+install_tmux_plugins
 install_java
 install_maven
 install_scala
